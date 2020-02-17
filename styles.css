@@ -18,17 +18,17 @@
 body {
     font-family: 'Proxima Nova';
     margin: 0 auto;
-    max-width: 68em;
-    background-color: RGB(163,218,231);
+    /* max-width: 68em; */
+    background-color: #29274c;
+    font-size:1em
     
 /*    background-image: url('../images/profilepic.jpg');*/
 }
 
-
-
-
 a {
     color: #F8B800;
+    color:RGB(24,79,92);
+    font-weight: bold;
 }
 
 a:hover {
@@ -50,7 +50,8 @@ h2 {
     max-width: 1000px;
     margin: 0 auto;
     padding: 40px;
-    color: RGB(24,79,92);
+    color: #a1c6ea;
+    
 
     
 }
@@ -58,7 +59,7 @@ h2 {
 
 /*Header and footer*/
 header, footer{
-    background: RGB(35,91,153);
+    background: #04080f;
     color: #8D99AE;
 }
 
@@ -66,12 +67,8 @@ header, footer{
 /** More specific classes **/
 header h1, header h2, header p{
     color: #FFFFFF;
+    
 }
-
-footer p {
-    color: white;
-}
-
 
 img {
     width: 20em;
@@ -95,10 +92,19 @@ header {
 
 
 
-.education, .experience, .projects {
-    background: white;
+.education, .projects, .skills, .awards {
+    background: #001242;
+    text-align: center;
+    clear: both;
+
 }   
-.skills, .awards {
-    background: white;
+
+
+
+.links {
+    font-size: 1.4em;
+    /* border: 0.01em 0.01em 0.01em 0.01em; */
+
 }
+
 
