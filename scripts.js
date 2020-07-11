@@ -28,3 +28,5 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";
   }
 } 
+
+document.onload = currentSlide(1);

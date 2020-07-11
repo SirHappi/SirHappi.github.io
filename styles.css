@@ -50,10 +50,7 @@ h2 {
     max-width: 1000px;
     margin: 0 auto;
     padding: 40px;
-    color: #a1c6ea;
-    
-
-    
+    color: #a1c6ea;    
 }
 
 
@@ -92,7 +89,7 @@ header {
 
 
 
-.education, .skills, .awards{
+.education, .skills, .awards, .proj-head{
     background: #001242;
     text-align: center;
     clear: both;
@@ -114,15 +111,20 @@ header {
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto;
-  padding-top: 1.5em;
+  margin: 0 auto;
+  /* padding-top: 1.5em; */
   min-height: 40em;
   max-height: 40em;
+  
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
+}
+
+.projects {
+  background: #001242;
 }
 
 /* Next & previous buttons */
