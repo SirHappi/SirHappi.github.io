@@ -92,7 +92,7 @@ header {
 
 
 
-.education, .skills, .awards {
+.education, .skills, .awards{
     background: #001242;
     text-align: center;
     clear: both;
@@ -102,7 +102,7 @@ header {
 
 
 .links {
-    font-size: 1.4em;
+    font-size: 1.5em;
     /* border: 0.01em 0.01em 0.01em 0.01em; */
 
 }
@@ -115,6 +115,9 @@ header {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  padding-top: 1.5em;
+  min-height: 40em;
+  max-height: 40em;
 }
 
 /* Hide the images by default */
