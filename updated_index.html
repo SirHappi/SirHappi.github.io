@@ -9,7 +9,7 @@
     <title>Haricharan S. Vinukonda | Resume </title>
     <link rel="stylesheet" href="styles.css">
     <!-- <script type="text/javascript" src="./scripts.js"> -->
-        
+      
     </script>
 </head>
 
@@ -34,10 +34,21 @@
 // ReactDOM.render(<p>Render React JSX</p>, document.getElementById('root2'));
 
 const PageHead = () => {
-  return <h1>Hello!</h1>;
+  return <div class="content-wrap">
+        <img class ="mainImg" src="profilepic.jpg"/>
+
+        <h1 class = "name">Haricharan Sriharsha Vinukonda</h1>
+
+        <div id="aboutMe">
+
+        
+        <p>A computer-science new-grad. I have an interest in application developement<br/>
+           accross many platforms and cybersecurity. My strongest languages are Java and Python.</p>
+        </div>
+        </div>;
     
 }
-// ReactDOM.render(<PageHead />, document.getElementById('root2'));
+ReactDOM.render(<PageHead />, document.getElementById('headPage'));
 
 // const ProjectHead = () => {
 //   return <div class = "content-wrap">
