@@ -14,55 +14,72 @@
 </head>
 
 <body>
-  <header >
-    <div class="content-wrap">
-    <img class ="mainImg" src="profilepic.jpg">
-
-    <h1 class = "name">Haricharan Sriharsha Vinukonda</h1>
-
-    <h2>About Me</h2>
-    
-    <p>Aspiring Computer Science student with a special interest in Penetration Testing, and applications
-     of graphics in scientific fields. 
-       </p>
-    </div>
-  </header>
-<div id="root"></div>
-<div id="root1"></div>
+<header id="headPage"></header>
+<main>
+  <section id = "proj-head"></section>
+  <section id= "projects"></section>
+</main>
 <div id="root2"></div>
 <div id="root3"></div>
 
 
 
 <script type="text/babel">
-
-// Render React element
-const react_element = React.createElement('p', {}, 'Render React element'); 
-ReactDOM.render(react_element, document.getElementById('root'));
-
-// Render React JSX
-const  element_jsx = <p>Render React JSX</p>;  // the right is an JSX expression
-ReactDOM.render(element_jsx, document.getElementById('root1'));
-
-// Render React JSX directly
-ReactDOM.render(<p>Render React JSX</p>, document.getElementById('root2'));
-
-// Render React component
-class Hello extends React.Component {
-  render() {
-    return <h1>Render React component</h1>
-  }
-}
 // ReactDOM.render(<Hello />, document.getElementById('root3'))
+// Render React JSX directly
+// ReactDOM.render(<p>Render React JSX</p>, document.getElementById('root2'));
 
-const Home = () => {
-  return <div>
-      <h1>Hello</h1>    
-    </div>
+const PageHead = () => {
+  return <h1>Hello!</h1>;
+    
 }
-ReactDOM.render(<Home />, document.getElementById('root3'))
+// ReactDOM.render(<PageHead />, document.getElementById('root2'));
 
+const ProjectHead = () => {
+  return <div class = "content-wrap">
+            <h2>Projects</h2>
+        </div>;
+}
 
+ReactDOM.render(<ProjectHead />, document.getElementById('proj-head'));
+
+const ProjectBody = () => {
+  return <div class="slideshow-container">
+            <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="HeartCross.png" style="width:100%"/>
+          <div class="text">Made this project with my team during StarterHacks 2020. The idea is connect people who are affected by<br/>
+              natural disasters with their family members, by using the infrastructure that rescuers already have in place.</div>
+          </div>
+
+          <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="Panch.png" style="width:100%"/>
+          <div class="text">Used Beautiful Soup to extract information from CIA World Factbook, and then uploaded said information <br/>
+              Cloud Firestore, using Java Firebase Admin SDK.</div>
+          </div>
+
+          <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="CWFapi.png" style="width:100%"/>
+          <div class="text">Using the database mentioned in the previous project, made a REST API, using Java and the Sprinboot Framework.<br/>
+              To the right are the outputs from a couple get requests to the API.</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>;
+}
+
+ReactDOM.render(<ProjectBody />, document.getElementById('projects'));
+
+const SlideControl = () => {
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div> ;
+}
 
 </script>
 
