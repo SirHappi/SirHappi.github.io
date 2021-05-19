@@ -45,7 +45,9 @@ h1 {
 h2 {
   margin-top: 0;
 }
-
+img {
+  width: 100%;
+}
 .content-wrap {
     max-width: 1000px;
     margin: 0 auto;
