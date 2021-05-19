@@ -13,7 +13,7 @@
     </script>
 </head>
 
-<body onload="currentSlide(1)">
+<body>
 <header id="headPage"></header>
 <main>
   <section id = "proj-head"></section>
@@ -23,8 +23,8 @@
   <section id="skills"></section>
   <section id="awards"></section>
 </main>
-<div id="root2"></div>
-<div id="root3"></div>
+<footer id="footer"></footer>
+
 
 
 
@@ -87,6 +87,15 @@ const Awards = () => {
 
 ReactDOM.render(<Awards />, document.getElementById('awards'));
 
+const Ending = () => {
+  return <div class="content-wrap">
+          <a href ="mailto:sri13.vinukonda@gmail.com">sri13.vinukonda@gmail.com</a>
+          <p>https://github.com/SriVinukonda</p>   
+         </div>
+}
+
+ReactDOM.render(<Ending />, document.getElementById('footer'))
+ 
 </script>
 
 </body>
