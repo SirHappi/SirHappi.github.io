@@ -21,6 +21,7 @@
     <div id="slideControls"></div>
   </section>
   <section id="skills"></section>
+  <section id="awards"></section>
 </main>
 <div id="root2"></div>
 <div id="root3"></div>
@@ -73,8 +74,18 @@ const Skills = () => {
     </div>;
   }
 ReactDOM.render(<Skills />, document.getElementById('skills'));
-  
 
+const Awards = () => {
+  return <div class="content-wrap">
+            <h2>Awards</h2>
+
+            <p>Certificate Of Distinguishment, Canadian Computing Contest, 2017<br/>
+            Best Use Of Google Cloud Platform, StarterHacks 2020</p>
+
+        </div>
+}
+
+ReactDOM.render(<Awards />, document.getElementById('awards'));
 
 </script>
 
