@@ -14,7 +14,19 @@
 </head>
 
 <body>
-  
+  <header >
+    <div class="content-wrap">
+    <img class ="mainImg" src="profilepic.jpg">
+
+    <h1 class = "name">Haricharan Sriharsha Vinukonda</h1>
+
+    <h2>About Me</h2>
+    
+    <p>Aspiring Computer Science student with a special interest in Penetration Testing, and applications
+     of graphics in scientific fields. 
+       </p>
+    </div>
+  </header>
 <div id="root"></div>
 <div id="root1"></div>
 <div id="root2"></div>
@@ -41,7 +53,16 @@ class Hello extends React.Component {
     return <h1>Render React component</h1>
   }
 }
-ReactDOM.render(<Hello />, document.getElementById('root3'))
+// ReactDOM.render(<Hello />, document.getElementById('root3'))
+
+const Home = () => {
+  return <div>
+      <h1>Hello</h1>    
+    </div>
+}
+ReactDOM.render(<Home />, document.getElementById('root3'))
+
+
 
 </script>
 
