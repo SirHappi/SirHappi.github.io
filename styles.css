@@ -90,10 +90,7 @@ header {
 }
 
 
-.aboutMe {
-  /* width: 50%; */
-  text-align: left;
-}
+
 .education, .skills, .awards, .proj-head{
     background: #001242;
     text-align: center;
