@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
+h1 {
+    font-size:4em;
+    margin-bottom: 0vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.allSections {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 2vh;
+    
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+    max-width: 5vh;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.profilePic, .laurierLogo {
+    width: 20vh;
+    height: 20vh; 
+    border-radius: 50%;
+/*    border-color: aliceblue;*/
+    /* float: left; */
 }
 
-.App-link {
-  color: #61dafb;
+.welcomeHeading {
+    text-align: center;
+    /* background-color: #001405; */
+    padding-top: 36vh;
+
+    height: 59vh;
+    /* width: 70vw; */
+    margin: 0vw 15vw 0vw 15vw;
+    /* font-size: if vw > vh: 10vw ; */
+    
+    /* color: #d96100;  */
+    color: #000000
+    
+}
+.welcomeHeading h1 {
+    margin: 0vh 0vw 0vh 0vw;
+    font-size:6em;
+}
+.greetings{
+    font-size: 1.5vh;
+    margin:0vh 0vw 0vh 0vw;
+}
+.quickBlurb {
+    font-size: 1.5vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.aboutMe {
+    background-color: #FFFFFF;
+    text-align: center;
+    
+    padding: 0;
+    align-items: center;
+    width: 70vw;
+    margin-top: 0vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    border-top: 8px solid black;
+    /* al */
+}
+
+
+
+.projects, .contact {
+    border-top: 8px solid #000000;
+    color:#000000;
+    background-color:#FFFFFF;
+    /* height: 50vh; */
+    width: 70vw;
+    margin: 0vw 15vw 0vw 15vw;
+    padding: 0vh 0vw 0vh 0vw;
+    text-align: center;
+    align-items: center;
+}
+
+.project {
+    /* margin-top: 2vh; */
+    border-top:2px solid black;
+    width:44vw;
+    
+    margin-left:13vw;
+    margin-right: 13vw;
+    background-color:#FFFFFF;
+}
+.pursuitBody {
+    margin-left:6vw;
+    margin-right:6vw;
+    width:32vw;
+}
+
+@media only screen and (orientation:portrait) {
+    .project {
+        border-top:2px solid black;
+    width:56vw;
+    
+    margin-left:7vw;
+    margin-right: 7vw;
+    background-color:#FFFFFF;
+    }
+    .pursuitBody {
+        margin-left:0vw;
+        margin-right:0vw;
+        width:56vw;
+    }
+}
+.projectDesc {
+    margin-bottom: 0vh;
+}
+
+.projectBody {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .project img {
+    float:left;
+} */
+.projectTitle, .subHeading {
+    font-size: calc(20px + 1vw);
+}
+.projectInfo {
+    color: #484848;
+    /* background-color: #0FF111; */
+    float:right;
+    /* margin-left: 2vw; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
 }
