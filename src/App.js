@@ -228,7 +228,7 @@ function App() {
              <div className="contactLogos"style={{display:"flex", backgroundColor:"#FFFFFF", justifyContent:"center",alignItems:"center"}} >
                 <a href="https://github.com/SriVinukonda"><img style={styles.contactLogo} src={githubLogo}></img></a>
                 <a href="https://devpost.com/sri13vinukonda"><img style={styles.contactLogo} src={devpostLogo}></img></a>
-                <a href="https://www.linkedin.com/in/srivinukonda/"><img style={styles.contactLogo,{maxWidth:"6vw"}} src={linkedInLogo}></img></a>
+                <a href="https://www.linkedin.com/in/srivinukonda/"><img style={{maxWidth:"6vw"}} src={linkedInLogo}></img></a>
                 
                 {/* <a><img style={styles.contactLogo} src={emailLogo}></img></a> */}
 
