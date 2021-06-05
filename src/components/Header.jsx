@@ -30,11 +30,16 @@ const styles=  {
     },
     customHeader: {
         width:"60vw",
-        // backgroundColor: "#000080",
-        marginLeft:"20vw",
-        marginRight:"20vw",
-        maringTop: "10vh",
+        height:"6vh",
+        backgroundColor: "#F86F00",
+        // marginLeft:"20vw",
+        // marginRight:"20vw",
+        paddingTop:"1.5vh",
+        // maringTop: "10vh",
         // zIndex:100,
+        position: "fixed",
+        top: "0vh",
+        width: "100%"
         
     },
     ulStyle: {
