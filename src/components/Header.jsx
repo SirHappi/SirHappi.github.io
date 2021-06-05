@@ -31,7 +31,7 @@ const styles=  {
     customHeader: {
         width:"60vw",
         height:"6vh",
-        backgroundColor: "#F86F00",
+        backgroundColor: "#FFB45F",
         // marginLeft:"20vw",
         // marginRight:"20vw",
         paddingTop:"1.5vh",
