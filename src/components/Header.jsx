@@ -31,12 +31,12 @@ const styles=  {
     customHeader: {
         width:"60vw",
         height:"6vh",
-        backgroundColor: "#FFB45F",
+        backgroundColor: "rgba(255,180,95,0.9)",
         // marginLeft:"20vw",
         // marginRight:"20vw",
         paddingTop:"1.5vh",
         // maringTop: "10vh",
-        // zIndex:100,
+        zIndex:100,
         position: "fixed",
         top: "0vh",
         width: "100%"
